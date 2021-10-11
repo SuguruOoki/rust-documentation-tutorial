@@ -20,6 +20,10 @@ fn main() {
         // 行の読み込みに失敗しました
         .expect("Failed to read line");
 
+    // 1. ユーザがエンターを押した
+    // 2. 改行文字が追加される
+    // 3. 改行文字をtrimする
+    // 4. 文字列のparseメソッドは、文字列を解析して何らかの数値にする
     let guess: u32 = guess.trim().parse()
         .expect("Please type a number!");
 
