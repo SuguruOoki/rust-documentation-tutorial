@@ -26,8 +26,14 @@ fn main() {
         // 3. 改行文字をtrimする
         // 4. 文字列のparseメソッドは、文字列を解析して何らかの数値にする
         let guess: u32 = match guess.trim().parse() {
-            Ok(num) => num,
-            Err(_) => continue,
+            Ok(num) => {
+                println!("Input OK!");
+                num
+            },
+            Err(_) => {
+                println!("Input invalid!");
+                continue
+            },
         };
 
         // 次のように予想しました: {}
