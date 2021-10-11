@@ -16,10 +16,12 @@ fn main() {
 
     let mut guess = String::new();
 
-    io::stdin()
-        .read_line(&mut guess)
+    io::stdin().read_line(&mut guess)
         // 行の読み込みに失敗しました
         .expect("Failed to read line");
+
+    let guess: u32 = guess.trim().parse()
+        .expect("Please type a number!");
 
     // 次のように予想しました: {}
     println!("You guessed: {}", guess);
