@@ -6,4 +6,10 @@ fn main() {
     println!("The value of x is: {}", x);
     x = 6;
     println!("The value of x is: {}", x);
+
+    // 定数にはmutキーワードは使用不可: 定数は標準で不変であるだけでなく、常に不変
+    // 命名規則は、 全て大文字でアンダースコアで単語区切り
+    const MAX_POINTS: u32 = 100_000;
+    println!("The value of x is: {}", MAX_POINTS);
+
 }
