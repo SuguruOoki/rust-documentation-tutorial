@@ -25,8 +25,10 @@ fn main() {
         // 2. 改行文字が追加される
         // 3. 改行文字をtrimする
         // 4. 文字列のparseメソッドは、文字列を解析して何らかの数値にする
-        let guess: u32 = guess.trim().parse()
-            .expect("Please type a number!");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         // 次のように予想しました: {}
         println!("You guessed: {}", guess);
