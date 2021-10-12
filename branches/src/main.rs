@@ -1,5 +1,5 @@
 fn main() {
-    let number = 3;
+    // let number = 3;
 
     // if number < 5 {
     //     println!("condition was true"); // 条件は真でした
@@ -13,7 +13,18 @@ fn main() {
     // }
 
     // 比較されているため、この形式は問題なし。
-    if number != 0 {
-        println!("number was something other than zero"); // 数値は0以外の何かです
+    // if number != 0 {
+    //     println!("number was something other than zero"); // 数値は0以外の何かです
+    // }
+
+    // let 文内で　　if 式を使う
+    // let condition = true;
+    // let number = if condition { 5 } else { 6 };
+
+    // // numberの値は、{}です
+    // println!("The value of number is: {}", number);
+
+    loop {
+        println!("again!"); // また
     }
 }
