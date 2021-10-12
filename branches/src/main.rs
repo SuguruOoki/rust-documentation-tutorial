@@ -29,12 +29,16 @@ fn main() {
     // }
 
     let a = [10, 20, 30, 40, 50];
-    let mut index = 0;
+    // let mut index = 0;
+    // while index < a.len() {
+    //     // 値は{}です
+    //     println!("the value is: {}", a[index]);
 
-    while index < a.len() {
+    //     index = index + 1;
+    // }
+
+    for element in a.iter() {
         // 値は{}です
-        println!("the value is: {}", a[index]);
-
-        index = index + 1;
+        println!("the value is: {}", element);
     }
 }
