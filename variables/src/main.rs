@@ -17,4 +17,15 @@ fn main() {
     const MAX_POINTS: u32 = 100_000;
     println!("The value of x is: {}", MAX_POINTS);
 
+    // スカラー型
+    // 1. 整数
+    // 2. 浮動小数点数
+    // 3. 論理値
+    // 4. 文字
+    // let guess: u32 = "42".parse().expect("Not a number!");
+
+    let x = 2.0; // f64
+    let y: f32 = 3.0; // f32
+    println!("x: {}", x);
+    println!("y: {}", y);
 }
