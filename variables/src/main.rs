@@ -41,19 +41,28 @@ fn main() {
     // println!("heart_eyed_cat: {}", heart_eyed_cat);
 
     // 複合型
-    let x: (i32, f64, u8) = (500, 6.4, 1);
+    // タプル型
+    // let x: (i32, f64, u8) = (500, 6.4, 1);
 
-    // x[0]みたいなもん。
-    let five_hundred = x.0;
+    // // x[0]みたいなもん。
+    // let five_hundred = x.0;
 
-    // x[1]みたいなもん。
-    let six_point_four = x.1;
+    // // x[1]みたいなもん。
+    // let six_point_four = x.1;
 
-    // x[2]みたいなもん。
-    let one = x.2;
+    // // x[2]みたいなもん。
+    // let one = x.2;
 
-    // println!("tup x: {}", x);
-    println!("five_hundred: {}", five_hundred);
-    println!("six_point_four: {}", six_point_four);
-    println!("one: {}", one);
+    // // println!("tup x: {}", x);
+    // println!("five_hundred: {}", five_hundred);
+    // println!("six_point_four: {}", six_point_four);
+    // println!("one: {}", one);
+
+    // 配列型
+    let a = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
+
+    println!("first: {}", first);
+    println!("second: {}", second);
 }
