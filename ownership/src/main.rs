@@ -22,4 +22,5 @@ fn main() {
     let y = x;
 
     println!("x = {}, y = {}", x, y);
+    // TODO: [所有権と関数]から始める
 }
