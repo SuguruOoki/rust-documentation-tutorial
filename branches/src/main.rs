@@ -24,7 +24,17 @@ fn main() {
     // // numberの値は、{}です
     // println!("The value of number is: {}", number);
 
-    loop {
-        println!("again!"); // また
+    // loop {
+    //     println!("again!"); // また
+    // }
+
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
+
+    while index < a.len() {
+        // 値は{}です
+        println!("the value is: {}", a[index]);
+
+        index = index + 1;
     }
 }
