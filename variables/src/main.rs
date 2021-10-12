@@ -32,11 +32,28 @@ fn main() {
     // Rustのchar型は、ユニコードのスカラー値を表します。
     // これはつまり、アスキーよりもずっとたくさんのものを表せるということ。
     // 絵文字もなんならちゃんと出力されちゃう。素敵。
-    let c = 'z';
-    let z = 'ℤ';
-    let heart_eyed_cat = '😻'; //ハート目の猫
+    // let c = 'z';
+    // let z = 'ℤ';
+    // let heart_eyed_cat = '😻'; //ハート目の猫
 
-    println!("c: {}", c);
-    println!("z: {}", z);
-    println!("heart_eyed_cat: {}", heart_eyed_cat);
+    // println!("c: {}", c);
+    // println!("z: {}", z);
+    // println!("heart_eyed_cat: {}", heart_eyed_cat);
+
+    // 複合型
+    let x: (i32, f64, u8) = (500, 6.4, 1);
+
+    // x[0]みたいなもん。
+    let five_hundred = x.0;
+
+    // x[1]みたいなもん。
+    let six_point_four = x.1;
+
+    // x[2]みたいなもん。
+    let one = x.2;
+
+    // println!("tup x: {}", x);
+    println!("five_hundred: {}", five_hundred);
+    println!("six_point_four: {}", six_point_four);
+    println!("one: {}", one);
 }
