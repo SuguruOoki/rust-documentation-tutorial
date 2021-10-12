@@ -59,10 +59,18 @@ fn main() {
     // println!("one: {}", one);
 
     // 配列型
-    let a = [1, 2, 3, 4, 5];
-    let first = a[0];
-    let second = a[1];
+    // let a = [1, 2, 3, 4, 5];
+    // let first = a[0];
+    // let second = a[1];
 
-    println!("first: {}", first);
-    println!("second: {}", second);
+    // println!("first: {}", first);
+    // println!("second: {}", second);
+
+    // 配列で無効なインデックスにアクセス
+    // let a = [1, 2, 3, 4, 5];
+    // let index = 10;
+
+    // let element = a[index];
+
+    // println!("The value of element is: {}", element); // 要素の値は{}です
 }
