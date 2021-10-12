@@ -12,9 +12,14 @@ fn main() {
     // // (注釈: ムーブが起きたのは、`s1`が`std::string::String`という
     // //     `Copy`トレイトを実装していない型だからです)
 
-    let s1 = String::from("hello");
     // PHPの参照系のものと同じような扱いをすれば良いという理解。
-    let s2 = s1.clone();
+    // オブジェクトクラスみたいなもん。
+    // let s1 = String::from("hello");
+    // let s2 = s1.clone();
+    // println!("{}, {}, world!", s1, s2);
 
-    println!("{}, {}, world!", s1, s2);
+    let x = 5;
+    let y = x;
+
+    println!("x = {}, y = {}", x, y);
 }
