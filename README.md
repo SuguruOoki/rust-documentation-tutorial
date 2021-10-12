@@ -76,3 +76,19 @@ let y = 6という文は値を返さないので、xに束縛するものがな�
 ```
 
 型が異なるということを示す。
+
+```rust
+error[E0382]: borrow of moved value: `s1`
+  --> src/main.rs:10:28
+   |
+7  |     let s1 = String::from("hello");
+   |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+8  |     let s2 = s1;
+   |              -- value moved here
+9  |
+10 |     println!("{}, world!", s1);
+   |                            ^^ value borrowed here after move
+
+```
+
+すでにコピー後の箇所が利用されているということを示しており、s2を利用するべきということ。
