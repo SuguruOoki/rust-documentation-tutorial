@@ -18,9 +18,9 @@ fn main() {
     // let s2 = s1.clone();
     // println!("{}, {}, world!", s1, s2);
 
-    let x = 5;
-    let y = x;
+    // let x = 5;
+    // let y = x;
 
-    println!("x = {}, y = {}", x, y);
+    // println!("x = {}, y = {}", x, y);
     // TODO: [所有権と関数]から始める
 }
