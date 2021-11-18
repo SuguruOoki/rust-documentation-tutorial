@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.9'
 
 services:
   backend:
@@ -16,5 +16,5 @@ services:
     command: /bin/sh -c "cargo watch -x run"
 
 volumes:
-  cargo-cache:
-  target-cache:
+  cargo-cache: null
+  target-cache: null
